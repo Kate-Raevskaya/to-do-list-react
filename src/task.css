@@ -1,0 +1,83 @@
+.task {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.task p {
+    font-size: 20px;
+    margin: 0 0 0 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    align-self: center;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.task .checkbox {
+    transform: scale(2);
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.task .edit-input {
+    margin-left: 5px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.task button {
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    border-color: transparent;
+    border-radius: 15px;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.task button:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.change-button, .save-button {
+    margin-left: auto;
+    background-color: #9370DBFF;
+}
+
+.change-button {
+    transform:scale(-1, 1);
+}
+
+.change-button:after {
+    content: '\270E';
+}
+
+.save-button:after {
+    content: '\2714';
+}
+
+.change-button:active, .save-button:active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: #574080;
+}
+
+.delete-button {
+    margin-left: 5px;
+    background-color: indianred;
+}
+
+.delete-button:after {
+    content: '\2716';
+}
+
+.delete-button:active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: #B45050;
+}
